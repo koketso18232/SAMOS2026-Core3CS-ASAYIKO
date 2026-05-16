@@ -10,20 +10,27 @@
 ---
 
 ## Project Overview
+This project analyzes and visualizes oceanographic data for the St Helena Bay and 
+Cape Columbine region, South Africa, using ESA-CCI Ocean Colour satellite climatology. 
+We combine chlorophyll-a concentration maps, bathymetry data, and time series analysis 
+to investigate seasonal cycles and spatial variability in phytoplankton biomass along 
+the Benguela Current upwelling system. St Helena Bay and Cape Columbine were selected 
+due to their position within one of the world's most productive eastern boundary 
+upwelling systems, making this an ideal region to observe strong seasonal chlorophyll 
+signals driven by wind-forced nutrient upwelling from depth.
 
-This project analyzes and visualizes oceanographic data for **St Helena Bay, South Africa**, 
-using ESA-CCI Ocean Colour satellite climatology. We combine chlorophyll-a concentration 
-maps, bathymetry data, and time series analysis to investigate seasonal cycles and spatial 
-variability in phytoplankton biomass along the Benguela Current upwelling system.
-
-St Helena Bay was selected due to its position within one of the world's most productive 
-eastern boundary upwelling systems, making it an ideal region to observe strong seasonal 
-chlorophyll signals driven by wind-forced nutrient upwelling.
 
 ---
 
 ## Repository Structure
-
+SAMOS2026-Core3CS-ASAYIKO/
+│
+├── Exercise5.ipynb                          # Main project notebook
+├── ESACCI-OC-MAPPED-CLIMATOLOGY-
+│   1M_MONTHLY_4km_PML_CHL-fv5.0.nc         # ESA-CCI chlorophyll dataset (not tracked — too large)
+├── chl_monthly_maps_StHelenaBay.png           # Exported montlhy maps figure (300 dpi)
+├── chl_time_series_StHelenaBay.png         # Exported time series figure (300 dpi)
+└── README.md                                # This file
 ---
 
 ## Datasets
