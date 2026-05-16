@@ -23,14 +23,9 @@ signals driven by wind-forced nutrient upwelling from depth.
 ---
 
 ## Repository Structure
-SAMOS2026-Core3CS-ASAYIKO/
-│
-├── Exercise5.ipynb                          # Main project notebook
-├── ESACCI-OC-MAPPED-CLIMATOLOGY-
-│   1M_MONTHLY_4km_PML_CHL-fv5.0.nc         # ESA-CCI chlorophyll dataset (not tracked — too large)
-├── chl_monthly_maps_StHelenaBay.png           # Exported montlhy maps figure (300 dpi)
-├── chl_time_series_StHelenaBay.png         # Exported time series figure (300 dpi)
-└── README.md                                # This file
+SAMOS2026-Core3CS-ASAYIKO/ ├── E5/ │ └── Exercise5.ipynb # Main project notebook ├── README.md # This file ├── .gitignore # Git configuration └── data/ # (Place datasets here) ├── ESACCI-OC-MAPPED-CLIMATOLOGY-1M_MONTHLY_4km_PML_CHL-fv5.0.nc └── GMRTv4_4_1_20260513topo.grd
+
+# This file
 ---
 
 ## Datasets
@@ -50,6 +45,21 @@ SAMOS2026-Core3CS-ASAYIKO/
 - **Format:** NetCDF (CF Convention)
 - **Region:** St Helena Bay, South Africa (17.5°–19.0°E, 33.5°–32.0°S)
 
+### 3. **Quick Start**
+
+
+```markdown
+## Quick Start
+
+1. **Obtain data files:**
+   - Download `ESACCI-OC-MAPPED-CLIMATOLOGY-1M_MONTHLY_4km_PML_CHL-fv5.0.nc` from the SAMOS2026 course portal
+   - Download bathymetry from [GMRT MapTool](https://www.gmrt.org/services/mapserver/)
+   - Place both files in the `E5/` directory
+
+2. **Run the notebook:**
+   ```bash
+   cd E5
+   jupyter lab Exercise5.ipynb
 ---
 
 ## Notebook Contents
@@ -136,11 +146,37 @@ jupyter lab
 > file size limits. It must be downloaded separately from the course portal.
 
 ---
+## Installation
 
+Clone and set up the environment:
+
+```bash
+git clone https://github.com/koketso18232/SAMOS2026-Core3CS-ASAYIKO.git
+cd SAMOS2026-Core3CS-ASAYIKO
+---
+ ## Methodology
+
+- **Data Processing:** xarray for NetCDF handling and spatial subsetting
+- **Visualization:** Cartopy for map projections, matplotlib for figures
+- **Temporal Analysis:** Monthly climatology computed from 1998–2020 satellite records
+- **Spatial Mapping:** 4 km resolution regridded to PlateCarree projection
+- **Log-scale visualization** applied to chlorophyll due to wide dynamic range
 ## Data Citation
 
-Ocean Colour Climate Change Initiative dataset, Version 5.0, European Space Agency, 
-available online at http://www.esa-oceancolour-cci.org
+```markdown
+## Attribution & Acknowledgments
+
+- **Course:** SAMOS2026 Core 3CS, University of Cape Town
+- **Instructors/Mentors:** Prof. Vichi /Mr Magata
+- **ESA Data:** Ocean Colour Climate Change Initiative v5.0
+- **Bathymetry:** Global Multi-Resolution Topography v4.1
+- **Colormaps:** `cmocean` package (Thyng et al., 2016)
+
+## References
+
+Thyng, K. M., Greene, C. A., Hetland, R. D., Zimmerle, H. M., & DiMarco, S. F. (2016). True colors of oceanography: Guidelines for effective and accurate colormap selection. *Oceanography*, 29(3), 9-13.
+
+Ocean Colour Climate Change Initiative (2023). Version 5.0. Retrieved from http://www.esa-oceancolour-cci.org
 
 ---
 
