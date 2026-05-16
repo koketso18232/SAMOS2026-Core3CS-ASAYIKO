@@ -122,6 +122,7 @@ Or if using conda (recommended for this project):
 conda install xarray numpy matplotlib cartopy netCDF4
 ```
 
+
 ---
 
 ## How to Run
@@ -145,7 +146,6 @@ jupyter lab
 > **Note:** The NetCDF dataset (~1.7 GB) is not tracked in this repository due to 
 > file size limits. It must be downloaded separately from the course portal.
 
----
 ## Installation
 
 Clone and set up the environment:
@@ -153,6 +153,8 @@ Clone and set up the environment:
 ```bash
 git clone https://github.com/koketso18232/SAMOS2026-Core3CS-ASAYIKO.git
 cd SAMOS2026-Core3CS-ASAYIKO
+
+
 ---
  ## Methodology
 
