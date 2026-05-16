@@ -49,7 +49,7 @@ SAMOS2026-Core3CS-ASAYIKO/
 ### 2. Bathymetry
 - **Source:** [GMRT — Global Multi-Resolution Topography](https://www.gmrt.org/)
 - **Format:** NetCDF (CF Convention)
-- **Region:** St Helena Bay, South Africa (17.5°–19.0°E, 33.5°–32.0°S)
+- **Region:** St Helena Bay and Cape Columbine, South Africa (17.5°–19.0°E, 33.5°–32.0°S)
 
 ---
 
@@ -88,7 +88,7 @@ The notebook `Exercise5.ipynb` is structured as follows:
 
 | Parameter        | Value                        |
 |------------------|------------------------------|
-| Region           | St Helena Bay, South Africa  |
+| Region           | St Helena Bay & Cape Columbine, South Africa  |
 | Latitude bounds  | 33.5°S – 32.0°S              |
 | Longitude bounds | 17.5°E – 19.0°E              |
 | Single grid point| 32.6°S, 17.7°E               |
